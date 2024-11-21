@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+main() {
+    char k1;
+    printf("1 ile 5 arasında bir değer girin: \n");
+    k1 = getchar();  // scanf("%c", &k1); yerine getchar() kullanılabilir
+
+    switch(k1) {
+        case '1':
+            printf("1 girdiniz\n");
+            break;
+        case '2':
+            printf("2 girdiniz\n");
+            break;
+        case '3':
+            printf("3 girdiniz\n");
+            break;
+        case '4':
+            printf("4 girdiniz\n");
+            break;
+        case '5':
+            printf("5 girdiniz\n");
+            break;
+        default:
+            printf("1 ile 5 arasında bir değer girilmelidir.\n");
+    }
+}
