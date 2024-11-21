@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+main() {
+    float a, b, d;
+    printf("Not1: \n");
+    scanf("%f", &a);
+    printf("Not2: \n");
+    scanf("%f", &b);
+
+    d = (a + b) / 2;
+    printf("Ortalama: %f\n", d);
+}
