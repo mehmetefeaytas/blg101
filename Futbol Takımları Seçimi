@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+main() {
+    char k1;
+    printf("B, F veya G harflerini girin: \n");
+    scanf("%c", &k1);  // getchar() yerine scanf kullanıldı
+
+    switch(k1) {
+        case 'B':
+            printf("Beşiktaş\n");
+            break;
+        case 'F':
+            printf("Fenerbahçe\n");
+            break;
+        case 'G':
+            printf("Galatasaray\n");
+            break;
+        default:
+            printf("Yanlış harf girdiniz\n");
+    }
+}
