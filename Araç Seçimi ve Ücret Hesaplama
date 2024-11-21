@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+main() {
+    int c, b;
+    char x;
+    printf("Araç Seçiniz: (o: Otomobil, k: Kamyon, m: Motosiklet)\n");
+    scanf("%c", &x);
+    printf("Süreyi giriniz: \n");
+    scanf("%d", &b);
+
+    switch (x) {
+        case 'o':
+            c = 30 * b;
+            printf("Ücret: %d\n", c);
+            break;
+        case 'k':
+            c = 20 * b;
+            printf("Ücret: %d\n", c);
+            break;
+        case 'm':
+            c = 10 * b;
+            printf("Ücret: %d\n", c);
+            break;
+        default:
+            printf("Yanlış harf girdiniz\n");
+    }
+}
