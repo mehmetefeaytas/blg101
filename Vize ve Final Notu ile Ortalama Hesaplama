@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int c, b, a, d, l;
+
+    // Kullanıcıdan vize ve final notlarını alıyoruz
+    printf("Vize: ");
+    scanf("%d", &c);
+    printf("Final: ");
+    scanf("%d", &b);
+
+    // Vize ve final notlarına göre ağırlıklı ortalamayı hesaplıyoruz
+    a = c * 0.4;  // Vize notunun %40'ı
+    d = b * 0.6;  // Final notunun %60'ı
+    l = a + d;    // Ortalamanın toplamı
+
+    // Ortalamayı ekrana yazdırıyoruz
+    printf("Ortalama = %d \n", l);
+
+    return 0;
+}
