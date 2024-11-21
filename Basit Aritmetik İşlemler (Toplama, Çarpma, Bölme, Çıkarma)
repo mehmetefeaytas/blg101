@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+main() {
+    int a, b, c, t, l, f;
+    a = 10;
+    b = 2;
+    t = a + b;
+    c = a * b;
+    l = a / b;
+    f = a - b;
+
+    printf("Toplam = %d \n", t);
+    printf("Çarpım = %d\n", c);
+    printf("Bölüm = %d\n", l);
+    printf("Çıkarma = %d\n", f);
+    printf("Toplam2 = %d\n\n", a + b);  // Yada böyle olabilir
+
+}
