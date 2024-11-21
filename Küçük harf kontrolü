@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+main() {
+    char k1;
+    printf("Bir karakter girin: \n");
+    k1 = getchar();  // scanf("%c", &k1); yerine getchar() kullanılabilir
+
+    switch(k1) {
+        case 'a':
+            printf("A harfini girdiniz\n");
+            break;
+        case 'b':
+            printf("B harfini girdiniz\n");
+            break;
+        default:
+            printf("Geçerli harf: A veya B\n");
+    }
+}
