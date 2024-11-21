@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+    printf("Bir sayi giriniz: ");
+    scanf("%d", &x);
+
+    if (x % 2 == 0) {
+        printf("Çift sayi\n");
+    } else {
+        printf("Tek sayi\n");
+    }
+
+    return 0;
+}
