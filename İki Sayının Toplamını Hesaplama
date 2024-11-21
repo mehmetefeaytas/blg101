@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, t;
+
+    // Kullanıcıdan iki sayı alıyoruz
+    printf("Birinci Sayı: ");
+    scanf("%d", &a);
+    printf("İkinci Sayı: ");
+    scanf("%d", &b);
+
+    // Toplamı hesaplıyoruz
+    t = a + b;
+
+    // Sonucu ekrana yazdırıyoruz
+    printf("Toplam = %d \n", t);
+
+    return 0;
+}
