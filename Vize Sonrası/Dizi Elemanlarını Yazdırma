@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+main(){
+    int dizi[20];
+    int id1,id2;
+    
+    dizi[0]=id1=5;
+    dizi[19]=id2=10;
+    
+    printf("%d %d \n %d %d", id1,id2,dizi[0],dizi[19]);
+}
