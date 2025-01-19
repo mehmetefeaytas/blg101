@@ -1,0 +1,28 @@
+#include <stdio.h>
+//SINAVSORUSU OLABİLİR
+// Cift ve tek sayilari ayiran fonksiyon
+void ciftVeTekleriAyir(int dizi[], int boyut) {
+    printf("Cift sayilar: ");
+    for (int i = 0; i < boyut; i++) {
+        if (dizi[i] % 2 == 0) {
+            printf("%d ", dizi[i]);
+        }
+    }
+    printf("\nTek sayilar: ");
+    for (int i = 0; i < boyut; i++) {
+        if (dizi[i] % 2 != 0) {
+            printf("%d ", dizi[i]);
+        }
+    }
+    printf("\n");
+}
+
+int main() {
+    int dizi[] = {3, 6, 9, 12, 15, 18, 21};
+    int boyut = sizeof(dizi) / sizeof(dizi[0]);
+
+    // Fonksiyonu cagir ve sayilari ayir
+    ciftVeTekleriAyir(dizi, boyut);
+
+    return 0;
+}
