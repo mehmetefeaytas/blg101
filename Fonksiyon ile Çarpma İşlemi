@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+void carp() {
+    int a,b;
+   printf("%d",5*5);
+}
+
+main(){
+    carp();
+}
