@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void kutu(int satir, int sutun) {
+    int sat, sut;
+    
+    for (sat = 0; sat < satir; sat++) {
+        
+        for (sut = 0; sut < sutun; sut++) {
+            printf("X");
+        }
+        
+        printf("\n");
+    }
+}
+
+int main() {
+    kutu(5, 25); 
+    return 0;
+}
