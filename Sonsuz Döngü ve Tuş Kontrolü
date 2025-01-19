@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>  // kbhit() fonksiyonunun tanımlı olduğu kütüphane
+
+int main() {
+    while (1) {  // Sonsuz döngü
+        if (kbhit()) {  // Eğer herhangi bir tuşa basıldıysa
+            getch();  // Tuşa basıldığını "okur" ve durdurur
+            break;  // Sonsuz döngüden çık
+        }
+        
+        printf("21\n");  // Sonsuz döngüde her seferinde "21" yazdır
+    }
+
+    printf("Program sonlandı!\n");
+    return 0;
+}
