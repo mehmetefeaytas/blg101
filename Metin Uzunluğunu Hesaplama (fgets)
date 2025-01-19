@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>  // strlen fonksiyonu icin
+
+int main() {
+    char metin[100];  // Maksimum 100 karakter alacak dizi
+
+    // Kullanıcıdan metin al
+    printf("Bir metin giriniz: ");
+    fgets(metin, sizeof(metin), stdin);
+
+    // Yeni satır karakterini (\n) kaldır
+    metin[strcspn(metin, "\n")] = 0;
+
+    // Metin uzunluğunu hesapla ve yazdır
+    int uzunluk = strlen(metin);
+    printf("Metnin uzunlugu: %d karakter\n", uzunluk);
+
+    return 0;
+}
