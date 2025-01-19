@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <ctype.h>
+
+void deneme(){
+    printf("efe");
+    
+}
+main(){
+    deneme();
+}
