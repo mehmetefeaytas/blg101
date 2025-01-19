@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+main(){
+    char isim[]="Dr.Ogr. Uyesi";
+    char isim2[100];
+    
+    printf("Adiniz: ");
+    scanf("%s",isim2);
+    
+    printf("%s %s",isim,isim2);
+}
