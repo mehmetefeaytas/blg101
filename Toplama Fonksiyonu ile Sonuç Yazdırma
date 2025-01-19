@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int topla(int x, int y){
+
+    return (x+y);
+}
+
+main(){
+    //int a,b;
+    int sonuc=topla(5,4);
+    //printf("İki Sayi gir:");
+    //scanf("%d%d",&a,&b);
+    printf("sonuc: %d",sonuc);
+}
