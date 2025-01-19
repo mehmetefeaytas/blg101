@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+main(){
+    int a;
+int dizi [100], toplam=0;
+printf("adet");
+scanf("%d",&a);
+for(int i=0;i<a;i++){
+    printf("%d sayi gir:",i+1);
+    scanf("%d",&dizi[i]);
+    toplam +=dizi[i];
+    
+}
+printf("Toplam %d",toplam);                  
+}
