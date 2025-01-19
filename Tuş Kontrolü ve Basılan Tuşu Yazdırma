@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>  
+
+int main() {
+   printf("Bir Tusa Bas Bekliyoruz:::::.....::::::..... \n");
+   
+   while(1) {
+       if (kbhit()){
+           char ch = getch();
+           printf("Basilan Tus: %c\n", ch);
+           break;
+       }
+   }
+   return 0;
+}
