@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    long int x, toplam = 0;
+
+    printf("Bir sayi girin (x): ");
+    scanf("%ld", &x);
+
+    for (long int i = 1; i <= x; i++) {
+        toplam += i;  
+    }
+
+    printf("1'den %ld'ye kadar olan sayilarin toplami: %ld\n", x, toplam);
+
+    return 0;
+}
