@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <conio.h>  
+
+int main(void) {
+    for( ; ; ){
+    printf("%d \n", 21);
+        if (kbhit()) {  
+            break;  
+        }
+    }
+    printf("Program sonlandi!\n");
+    return 0;
+}
