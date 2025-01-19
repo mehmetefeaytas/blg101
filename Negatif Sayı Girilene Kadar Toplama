@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int sayi = 0, i;
+
+    do {
+        printf("Bir sayi girin (Negatif sayi girildiginde program durur): ");
+        scanf("%d", &i);
+        
+        if (i >= 0) {
+            sayi += i;  // Girilen sayıyı toplam ile ekle
+            printf("Toplam: %d\n", sayi);  // O ana kadar olan toplamı yazdır
+        }
+    } while (i >= 0);  // Negatif bir sayi girilene kadar döngü devam eder
+
+    printf("Negatif sayi girdiniz, program sonlandi.\n");
+    return 0;
+}
