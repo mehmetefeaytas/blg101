@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int ri;
+    for(int i=1; i<=20; i++){
+        ri=rand();
+        printf("%d \t %d \n", i,ri);
+    }
+    printf("20 tane sayi");
+}
