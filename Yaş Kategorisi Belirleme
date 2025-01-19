@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void yas(int c) {
+    if (c >= 0 && c <= 15) {
+        printf("cocuk\n");
+    } else if (c > 15 && c <= 30) {
+        printf("genc\n");
+    } else if (c > 30 && c <= 55) {
+        printf("yetiskin\n");
+    } else if (c > 55 && c <= 90) {
+        printf("yasli\n");
+    } else {
+        printf("hata\n");
+    }
+}
+
+int main() {
+    int x;
+    printf("Yas: ");
+    scanf("%d", &x);
+    yas(x);
+    return 0;
+}
