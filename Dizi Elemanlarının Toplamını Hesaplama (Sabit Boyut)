@@ -1,0 +1,17 @@
+#include <stdio.h>
+//SINAV SORUSU OLABİLİR
+// Dizinin elemanlarının toplamını hesaplayan fonksiyon
+int toplam(int dizi[], int boyut) {
+    int toplam = 0;
+    for (int i = 0; i < boyut; i++) {
+        toplam += dizi[i];  
+    }
+    return toplam;  
+}
+
+int main() {
+    int dizi[] = {10, 20, 30, 40, 50}; 
+    int sonuc = toplam(dizi, 5);  
+    printf("Dizinin elemanlarinin toplami: %d\n", sonuc);  
+    return 0;
+}
