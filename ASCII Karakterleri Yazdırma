@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void){
+    int i;
+char c;
+
+for(i=20; i<60; i++){
+    c= toascii(i);
+    
+    printf("%d \t %c\n",i,c);
+}
+return 0;
+}
