@@ -1,0 +1,11 @@
+#include <stdio.h>
+main(){
+    int i;
+    for(i=0;i<=20;i++){
+        if(i==5 || i==8 || i==9){
+            printf("\n %d ekrana yazdirilamaz. \n",i);
+            continue;
+        }
+        printf("%d ", i);
+    }
+}
