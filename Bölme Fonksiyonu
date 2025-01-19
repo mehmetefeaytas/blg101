@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+float bol(float x, float y){
+
+    return (x/y);
+}
+
+ main()
+{
+    float a,b;
+    printf("İki Sayi gir:");
+    scanf("%f%f",&a,&b);
+    printf("sonuc: %f",bol(a,b));
+    return 0;
+}
