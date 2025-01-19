@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+main(){
+int dizi [5]={12,34,56,35,67};
+printf("%d\n",dizi[0]);
+printf("%d\n",dizi[3]);
+}
