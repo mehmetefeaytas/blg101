@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int topla(int x, int y) {
+  return x + y;
+}
+
+int carp(int x, int y) {
+  return x * y;
+}
+
+int cikar(int x, int y) {
+  return x - y;
+}
+
+int bol(int x, int y) {
+  if (y == 0) {
+    printf("Sifira bolme hatasi!\n");
+    return 0; 
+  }
+  return x / y;
+}
+
+int main() {
+    int a, b;
+
+    printf("Iki sayi girin: ");
+    scanf("%d%d", &a, &b);
+
+    int toplamaSonuc = topla(a, b);
+    int carpmaSonuc = carp(a, b);
+    int cikarmaSonuc = cikar(a, b);
+    int bolmeSonuc = bol(a, b);
+
+    printf("Toplama: %d\n", toplamaSonuc);
+    printf("Carpma: %d\n", carpmaSonuc);
+    printf("Cikarma: %d\n", cikarmaSonuc);
+    printf("Bolme: %d\n", bolmeSonuc);
+
+    return 0;
+}
