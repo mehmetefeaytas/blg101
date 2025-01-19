@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+// Yıldızlardan oluşan dik üçgeni oluşturan fonksiyon
+void dikUcgenYazdir(int satirSayisi) {
+    for (int i = 1; i <= satirSayisi; i++) {  // Satır sayısı kadar döngü
+        for (int j = 1; j <= i; j++) {  // Yıldız sayısını artıran iç döngü
+            printf("*");  // Yıldız bastır
+        }
+        printf("\n");  // Her satırdan sonra yeni satıra geç
+    }
+}
+
+int main() {
+    int satirSayisi;
+
+    // Kullanıcıdan satır sayısını al
+    printf("Dik Üçgenin satir sayisini girin: ");
+    scanf("%d", &satirSayisi);
+
+    // Fonksiyonu çağırarak üçgeni yazdır
+    dikUcgenYazdir(satirSayisi);
+
+    return 0;
+}
