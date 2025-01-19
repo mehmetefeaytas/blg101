@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void fonk(float toplam) {  // toplam parametresi float olarak alındı
+    if (toplam > 50) {
+        if (toplam > 70) {
+            printf("Gec");
+        } else {
+            printf("SartGec");
+        }
+    } else {
+        printf("Kal");
+    }
+}
+
+int main() {
+    float a, b;  // a ve b float tipinde tanımlandı
+    float toplam;  // toplam değişkeni de float olarak tanımlandı
+    
+    printf("Vize gir: ");
+    scanf("%f", &a);  // vize notu float olarak alındı
+    
+    printf("Final gir: ");
+    scanf("%f", &b);  // final notu float olarak alındı
+    
+    toplam = (a * 0.4 + b * 0.6);  // hesaplama float olarak yapıldı
+    
+    printf("Toplam: %.2f\n", toplam);  // toplam sonucu yazdırıldı
+    fonk(toplam);  // fonk fonksiyonu parametreyle çağrıldı
+    
+    return 0;
+}
