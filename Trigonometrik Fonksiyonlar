@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.1415993
+
+int main(){
+double aci = 60.0;
+aci += PI/180.0;
+
+printf ("60 derecenin ");
+printf("sinusu : %lf\n", sin(aci));
+printf("kosinusu : %lf\n", cos(aci));
+printf("tanjanti : %lf\n", tan(aci));
+printf("kotanjantı : %lf\n", 1.0/tan(aci));
+return 0;
+}
