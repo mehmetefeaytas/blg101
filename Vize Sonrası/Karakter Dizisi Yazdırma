@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+main(){
+    char soyad[7];
+    soyad[0] = 'A';
+    soyad[1] = 'Y';
+    soyad[2] = 'T';
+    soyad[3] = 'A';
+    soyad[4] = 'S';
+    soyad[6] = '0';
+    printf("Soyadi %s dir. \n",soyad);
+    printf("İçinden bir karakter: %c \n",soyad[1]);
+}
