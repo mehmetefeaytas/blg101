@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int kenar_uzunlugu;
+    
+    // Kullanıcıdan kenar uzunluğunu al
+    printf("Kenar uzunlugunu girin: ");
+    scanf("%d", &kenar_uzunlugu);
+
+    // Kareyi çizme
+    for (int i = 0; i < kenar_uzunlugu; i++) {
+        for (int j = 0; j < kenar_uzunlugu; j++) {
+            // Kenarları * ile, içi boş bırak
+            if (i == 0 || i == kenar_uzunlugu - 1 || j == 0 || j == kenar_uzunlugu - 1) {
+                printf("*");
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
